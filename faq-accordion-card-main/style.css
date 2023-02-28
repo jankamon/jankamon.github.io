@@ -33,8 +33,8 @@ main {
 .card {
     background-color: #fff;
     border-radius: 20px;
-    width: 750px;
-    height: 400px;
+    width: 650px;
+    height: 350px;
     /* overflow: hidden; */
     display: flex;
 }
@@ -55,6 +55,7 @@ main {
 h1 {
     font-size: 2rem;
     font-weight: 700;
+    padding-bottom: 20px;
 }
 
 h2 {
@@ -106,3 +107,40 @@ h2 {
 
 .attribution { font-size: 11px; text-align: center; margin-top: 10px;}
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 375px) {
+    .card {
+        flex-direction: column;
+        width: 90%;
+        height: 50%;
+    }
+
+    .leftside {
+        height: 27%;
+        background-image: url('./images/bg-pattern-mobile.svg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 78%;
+    }
+
+    .woman {
+        width: 80%;
+        left: 35px;
+        top: -120px;
+    }
+    
+    .box {
+        width: 30%;
+        left: 25px;
+        top: -245px;
+        
+    }
+
+    .rightside {
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
